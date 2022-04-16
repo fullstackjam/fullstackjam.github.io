@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>如何在 google 的搜索结果中屏蔽 CSDN?</title>
+    <url>/posts/fac6ea32.html</url>
+    <content><![CDATA[<p>CSDN 现在的风气大家都知道，原创内容很少，不光到外网去搬运，自己的用户这边的回答也是复制粘贴成瘾，往往你在 Google 中文搜索后会有数个重复的 CSDN 内容，实在毒瘤。今天就教大家如何 Google 搜索结果中屏蔽 CSDN 这类毒瘤网站。</p>
+<span id="more"></span>
+
+<p>引用一段知乎用户 <a href="https://www.zhihu.com/people/wisper-53">Kk Shinkai</a> 对其的评价:</p>
+<blockquote>
+<p>CSDN 用户自嗨其实我们都管不着, 但问题是它把搜索引擎给污染了.CSDN 的用户特别喜欢复制. 连装个环境, 都把要官网上的内容复制一下, 发个博客. 但问题是人家官网是随时更新的, 你发的博客过两年就没有参考价值了; 一群无聊的小白自娱自乐并不惹人讨厌, 关键是百度把 CSDN 的优先级放到第一个, CSDN 就把整个搜索引擎给入侵了, 无论你想安装什么, 官网永远都被挤在一堆陈年老帖之后. 再有就是这群人还喜欢复制别人的博客, 把别人的博客原封不动的拷一份, 再粘个原帖的地址, 就当是自己写的了.结果, 当你打开百度, 搜个东西, 前 5 ~ 10 个选项都是完全拷贝的, 却早已过时的 CSND, 换谁心态不崩啊. 真怀疑百度是 reverse . PageRank 算法…最后，求求 CSDN 的大佬们学学 Markdown 吧，那玩意又不难，往 blockquote 放代码，往 pre 里放正文，拿 code 当 mark，真的是读都不想读好么…</p>
+</blockquote>
+<p>诚然，百度已经足够毒瘤了，你逃到 google，奈何英文不过关中文搜索结果也是难逃 CSDN 魔爪。 OK，言归正传，现在给大家安利一款 chrome 插件:<a href="https://chrome.google.com/webstore/detail/ublacklist/pncfbmialoiaghdehhbnbhkkgmjanfhe"><strong>uBlacklist</strong></a> <img src="https://tc.royfk.com/images/2019/11/07/-2019-11-07-134955.jpg" alt="-2019-11-07-134955.jpg"> 插件地址:<a href="https://github.com/iorate/uBlacklist">https://github.com/iorate/uBlacklist</a> 插件很简单，主要功能就是在 google 搜索结果中屏蔽你不想要的网址，支持正则表达式。 首先，打开CSDN官网，单击插件图标，<strong>Block</strong>就完事了。 <img src="https://tc.royfk.com/images/2019/11/07/QQ20191107135413.png" alt="QQ20191107135413.png"> 完成后我们打开 Google 查看对比结果 <img src="https://tc.royfk.com/images/2019/11/07/QQ20191107134126.png" alt="QQ20191107134126.png"> <img src="https://tc.royfk.com/images/2019/11/07/-2019-11-07-134205.jpg" alt="-2019-11-07-134205.jpg"> 舒服多了~~~ 这个插件还支持屏蔽其他网页，现在就装起来，来净化你的搜索结果吧！ 除此之外我还屏蔽的一些网页</p>
+<ul>
+<li>baike.baidu.com</li>
+<li>zhidao.baidu.com</li>
+<li>bbs.csdn.net</li>
+<li>blog.csdn.net</li>
+</ul>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>uBlacklist</tag>
+      </tags>
+  </entry>
+</search>
