@@ -208,6 +208,10 @@
 <h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cw</span><br><span class="line">x w b e</span><br><span class="line">i I a A o O s S</span><br><span class="line">0 $</span><br><span class="line">gg G</span><br><span class="line">d dd dw daw D dG dgg </span><br><span class="line">p yy </span><br><span class="line">u ctrl + r</span><br></pre></td></tr></table></figure>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:w !sudo tee %</span><br><span class="line">:set nu</span><br><span class="line">:%s/zempty/handsome/i</span><br><span class="line">:%s/zempty/handsome</span><br><span class="line">:%s/zempty/handsome/g</span><br><span class="line">:%s/zempty/handsome/gc</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><a href="https://library-cdq.oss-cn-beijing.aliyuncs.com/technology/Vim%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7.pdf">Vim实用技巧.pdf (aliyuncs.com)</a></li>
+</ul>
 ]]></content>
       <categories>
         <category>technology</category>
