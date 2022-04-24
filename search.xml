@@ -1,6 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chrome, Shell and Vim Keyboard Shortcuts</title>
+    <url>/posts/2905e49f.html</url>
+    <content><![CDATA[<p>In this post, you will learn：</p>
+<ul>
+<li>Practical Chrome keyboard Shortcuts.</li>
+<li>Practical Terminal Keyboard Shortcuts keys.</li>
+<li>Vim Keyboard Shortcuts.</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="Chrome-keyboard-shortcuts"><a href="#Chrome-keyboard-shortcuts" class="headerlink" title="Chrome keyboard shortcuts"></a>Chrome keyboard shortcuts</h2><h3 id="Tab-and-window-shortcuts"><a href="#Tab-and-window-shortcuts" class="headerlink" title="Tab and window shortcuts"></a>Tab and window shortcuts</h3><table>
+<thead>
+<tr>
+<th>Action</th>
+<th align="left">Shortcut</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Open a new window</td>
+<td align="left"><strong>Ctrl + n</strong></td>
+</tr>
+<tr>
+<td>Open a new window in Incognito mode</td>
+<td align="left"><strong>Ctrl + Shift + n</strong></td>
+</tr>
+<tr>
+<td>Open a new tab, and jump to it</td>
+<td align="left"><strong>Ctrl + t</strong></td>
+</tr>
+<tr>
+<td>Reopen previously closed tabs in the order they were closed</td>
+<td align="left"><strong>Ctrl + Shift + t</strong></td>
+</tr>
+<tr>
+<td>Jump to the next open tab</td>
+<td align="left"><strong>Ctrl + Tab</strong></td>
+</tr>
+<tr>
+<td>Jump to the rightmost tab</td>
+<td align="left"><strong>Ctrl + 9</strong></td>
+</tr>
+<tr>
+<td>Open the previous page from your browsing history in the current tab</td>
+<td align="left"><strong>Alt + Left arrow</strong></td>
+</tr>
+<tr>
+<td>Open the next page from your browsing history in the current tab</td>
+<td align="left"><strong>Alt + Right arrow</strong></td>
+</tr>
+<tr>
+<td>Close the current tab</td>
+<td align="left"><strong>Ctrl + w</strong></td>
+</tr>
+</tbody></table>
+<h3 id="Google-Chrome-feature-shortcuts"><a href="#Google-Chrome-feature-shortcuts" class="headerlink" title="Google Chrome feature shortcuts"></a>Google Chrome feature shortcuts</h3><table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Shortcut</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Show or hide the Bookmarks bar</td>
+<td><strong>Ctrl + Shift + b</strong></td>
+</tr>
+<tr>
+<td>Open the History page in a new tab</td>
+<td><strong>Ctrl + h</strong></td>
+</tr>
+<tr>
+<td>Open the Downloads page in a new tab</td>
+<td><strong>Ctrl + j</strong></td>
+</tr>
+<tr>
+<td>Open the Find Bar to search the current page</td>
+<td><strong>Ctrl + f</strong> or <strong>F3</strong></td>
+</tr>
+<tr>
+<td>Jump to the next match to your Find Bar search</td>
+<td><strong>Ctrl + g</strong></td>
+</tr>
+</tbody></table>
+<h3 id="Mouse-shortcuts"><a href="#Mouse-shortcuts" class="headerlink" title="Mouse shortcuts"></a>Mouse shortcuts</h3><table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Shortcut</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Open a link in new background tab</td>
+<td><strong>Ctrl +</strong> Click a link</td>
+</tr>
+<tr>
+<td>Open a link in a new window</td>
+<td><strong>Shift +</strong> Click a link</td>
+</tr>
+<tr>
+<td>Make everything on the page bigger</td>
+<td><strong>Ctrl +</strong> Scroll your mousewheel up</td>
+</tr>
+<tr>
+<td>Make everything on the page smaller</td>
+<td><strong>Ctrl +</strong> Scroll your mousewheel down</td>
+</tr>
+</tbody></table>
+<ul>
+<li><a href="https://github.com/gdh1995/vimium-c">gdh1995&#x2F;vimium-c: A keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar (github.com)</a></li>
+</ul>
+<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><h3 id="Cursor-Movement-Commands"><a href="#Cursor-Movement-Commands" class="headerlink" title="Cursor Movement Commands"></a>Cursor Movement Commands</h3><table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Ctrl-a</td>
+<td align="left">Move cursor to the beginning of the line.</td>
+</tr>
+<tr>
+<td align="left">Ctrl-e</td>
+<td align="left">Move cursor to the end of the line.</td>
+</tr>
+<tr>
+<td align="left"><del>Ctrl-f</del></td>
+<td align="left"><del>Move cursor forward one character;same as the right arrow key.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Ctrl-b</del></td>
+<td align="left"><del>Move cursor backward one character;same as the left arrow key.</del></td>
+</tr>
+<tr>
+<td align="left">Alt-f</td>
+<td align="left">Move cursor forward one word.</td>
+</tr>
+<tr>
+<td align="left">Alt-b</td>
+<td align="left">Move cursor backward one word.</td>
+</tr>
+<tr>
+<td align="left">Ctrl-l</td>
+<td align="left">Clear the screen and move the cursor to the top left corner. The clear command does the same thing.</td>
+</tr>
+</tbody></table>
+<h3 id="Text-Editing-Commands"><a href="#Text-Editing-Commands" class="headerlink" title="Text Editing Commands"></a>Text Editing Commands</h3><table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><del>Ctrl-d</del></td>
+<td align="left"><del>Delete the character at the cursor location</del></td>
+</tr>
+<tr>
+<td align="left"><del>Ctrl-t</del></td>
+<td align="left"><del>Transpose(exchange)the character at the cursor location with the one preceding it.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Alt-t</del></td>
+<td align="left"><del>Transpose the word at the cursor location with the one preceding it.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Alt-l</del></td>
+<td align="left"><del>Convert the characters from the cursor location to the end of the word to lowercase.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Alt-u</del></td>
+<td align="left"><del>Convert the characters from the cursor location to the end of the word to uppercase.</del></td>
+</tr>
+</tbody></table>
+<h3 id="Cut-And-Paste-Commands"><a href="#Cut-And-Paste-Commands" class="headerlink" title="Cut And Paste Commands"></a>Cut And Paste Commands</h3><table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Ctrl-k</td>
+<td align="left">Kill text from the cursor location to the end of line.</td>
+</tr>
+<tr>
+<td align="left">Ctrl-u</td>
+<td align="left">Kill text from the cursor location to the beginning of the line.</td>
+</tr>
+<tr>
+<td align="left"><del>Alt-d</del></td>
+<td align="left"><del>Kill text from the cursor location to the end of the current word.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Alt-Backspace</del></td>
+<td align="left"><del>Kill text from the cursor location to the beginning of the word. If the cursor is at the beginning of a word, kill the previous word.</del></td>
+</tr>
+<tr>
+<td align="left">Ctrl-y</td>
+<td align="left">Yank text from the kill-ring and insert it at the cursor location.</td>
+</tr>
+</tbody></table>
+<ul>
+<li><a href="http://billie66.github.io/TLCL/book/chap09.html">TLCL (billie66.github.io)</a></li>
+</ul>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cw</span><br><span class="line">x w b e</span><br><span class="line">i I a A o O s S</span><br><span class="line">0 $</span><br><span class="line">gg G</span><br><span class="line">d dd dw daw D dG dgg </span><br><span class="line">p yy </span><br><span class="line">u ctrl + r</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">:w !sudo tee %</span><br><span class="line">:set nu</span><br><span class="line">:%s/zempty/handsome/i</span><br><span class="line">:%s/zempty/handsome</span><br><span class="line">:%s/zempty/handsome/g</span><br><span class="line">:%s/zempty/handsome/gc</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>technology</category>
+      </categories>
+      <tags>
+        <tag>Tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux Basics and System Startup</title>
     <url>/posts/8bfa65d2.html</url>
     <content><![CDATA[<p>In this post, you will learn：</p>

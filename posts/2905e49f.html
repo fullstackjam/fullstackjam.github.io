@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.1.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"fullstackjam.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="In this post, you will learn：  Practical Chrome keyboard Shortcuts. Practical Terminal Keyboard Shortcuts keys. Vim Keyboard Shortcuts.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chrome, Shell and Vim Keyboard Shortcuts">
+<meta property="og:url" content="https://fullstackjam.com/posts/2905e49f.html">
+<meta property="og:site_name" content="Jam&#39;s blog">
+<meta property="og:description" content="In this post, you will learn：  Practical Chrome keyboard Shortcuts. Practical Terminal Keyboard Shortcuts keys. Vim Keyboard Shortcuts.">
+<meta property="og:locale">
+<meta property="article:published_time" content="2022-04-24T12:44:20.000Z">
+<meta property="article:modified_time" content="2022-04-24T14:14:10.784Z">
+<meta property="article:author" content="Jam ma">
+<meta property="article:tag" content="Tools">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://fullstackjam.com/posts/2905e49f.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-Hans","comments":true,"permalink":"https://fullstackjam.com/posts/2905e49f.html","path":"posts/2905e49f.html","title":"Chrome, Shell and Vim Keyboard Shortcuts"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Chrome, Shell and Vim Keyboard Shortcuts | Jam's blog</title>
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jam's blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Chrome-keyboard-shortcuts"><span class="nav-number">1.</span> <span class="nav-text">Chrome keyboard shortcuts</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab-and-window-shortcuts"><span class="nav-number">1.1.</span> <span class="nav-text">Tab and window shortcuts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Google-Chrome-feature-shortcuts"><span class="nav-number">1.2.</span> <span class="nav-text">Google Chrome feature shortcuts</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mouse-shortcuts"><span class="nav-number">1.3.</span> <span class="nav-text">Mouse shortcuts</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell"><span class="nav-number">2.</span> <span class="nav-text">Shell</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Cursor-Movement-Commands"><span class="nav-number">2.1.</span> <span class="nav-text">Cursor Movement Commands</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Text-Editing-Commands"><span class="nav-number">2.2.</span> <span class="nav-text">Text Editing Commands</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cut-And-Paste-Commands"><span class="nav-number">2.3.</span> <span class="nav-text">Cut And Paste Commands</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Vim"><span class="nav-number">3.</span> <span class="nav-text">Vim</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Jam ma</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="https://fullstackjam.com/posts/2905e49f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Jam ma">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jam's blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Chrome, Shell and Vim Keyboard Shortcuts | Jam's blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Chrome, Shell and Vim Keyboard Shortcuts
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2022-04-24 20:44:20 / Modified: 22:14:10" itemprop="dateCreated datePublished" datetime="2022-04-24T20:44:20+08:00">2022-04-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/technology/" itemprop="url" rel="index"><span itemprop="name">technology</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>In this post, you will learn：</p>
+<ul>
+<li>Practical Chrome keyboard Shortcuts.</li>
+<li>Practical Terminal Keyboard Shortcuts keys.</li>
+<li>Vim Keyboard Shortcuts.</li>
+</ul>
+<span id="more"></span>
+
+<h2 id="Chrome-keyboard-shortcuts"><a href="#Chrome-keyboard-shortcuts" class="headerlink" title="Chrome keyboard shortcuts"></a>Chrome keyboard shortcuts</h2><h3 id="Tab-and-window-shortcuts"><a href="#Tab-and-window-shortcuts" class="headerlink" title="Tab and window shortcuts"></a>Tab and window shortcuts</h3><table>
+<thead>
+<tr>
+<th>Action</th>
+<th align="left">Shortcut</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Open a new window</td>
+<td align="left"><strong>Ctrl + n</strong></td>
+</tr>
+<tr>
+<td>Open a new window in Incognito mode</td>
+<td align="left"><strong>Ctrl + Shift + n</strong></td>
+</tr>
+<tr>
+<td>Open a new tab, and jump to it</td>
+<td align="left"><strong>Ctrl + t</strong></td>
+</tr>
+<tr>
+<td>Reopen previously closed tabs in the order they were closed</td>
+<td align="left"><strong>Ctrl + Shift + t</strong></td>
+</tr>
+<tr>
+<td>Jump to the next open tab</td>
+<td align="left"><strong>Ctrl + Tab</strong></td>
+</tr>
+<tr>
+<td>Jump to the rightmost tab</td>
+<td align="left"><strong>Ctrl + 9</strong></td>
+</tr>
+<tr>
+<td>Open the previous page from your browsing history in the current tab</td>
+<td align="left"><strong>Alt + Left arrow</strong></td>
+</tr>
+<tr>
+<td>Open the next page from your browsing history in the current tab</td>
+<td align="left"><strong>Alt + Right arrow</strong></td>
+</tr>
+<tr>
+<td>Close the current tab</td>
+<td align="left"><strong>Ctrl + w</strong></td>
+</tr>
+</tbody></table>
+<h3 id="Google-Chrome-feature-shortcuts"><a href="#Google-Chrome-feature-shortcuts" class="headerlink" title="Google Chrome feature shortcuts"></a>Google Chrome feature shortcuts</h3><table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Shortcut</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Show or hide the Bookmarks bar</td>
+<td><strong>Ctrl + Shift + b</strong></td>
+</tr>
+<tr>
+<td>Open the History page in a new tab</td>
+<td><strong>Ctrl + h</strong></td>
+</tr>
+<tr>
+<td>Open the Downloads page in a new tab</td>
+<td><strong>Ctrl + j</strong></td>
+</tr>
+<tr>
+<td>Open the Find Bar to search the current page</td>
+<td><strong>Ctrl + f</strong> or <strong>F3</strong></td>
+</tr>
+<tr>
+<td>Jump to the next match to your Find Bar search</td>
+<td><strong>Ctrl + g</strong></td>
+</tr>
+</tbody></table>
+<h3 id="Mouse-shortcuts"><a href="#Mouse-shortcuts" class="headerlink" title="Mouse shortcuts"></a>Mouse shortcuts</h3><table>
+<thead>
+<tr>
+<th><strong>Action</strong></th>
+<th><strong>Shortcut</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Open a link in new background tab</td>
+<td><strong>Ctrl +</strong> Click a link</td>
+</tr>
+<tr>
+<td>Open a link in a new window</td>
+<td><strong>Shift +</strong> Click a link</td>
+</tr>
+<tr>
+<td>Make everything on the page bigger</td>
+<td><strong>Ctrl +</strong> Scroll your mousewheel up</td>
+</tr>
+<tr>
+<td>Make everything on the page smaller</td>
+<td><strong>Ctrl +</strong> Scroll your mousewheel down</td>
+</tr>
+</tbody></table>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/gdh1995/vimium-c">gdh1995&#x2F;vimium-c: A keyboard shortcut browser extension for keyboard-based navigation and tab operations with an advanced omnibar (github.com)</a></li>
+</ul>
+<h2 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h2><h3 id="Cursor-Movement-Commands"><a href="#Cursor-Movement-Commands" class="headerlink" title="Cursor Movement Commands"></a>Cursor Movement Commands</h3><table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Ctrl-a</td>
+<td align="left">Move cursor to the beginning of the line.</td>
+</tr>
+<tr>
+<td align="left">Ctrl-e</td>
+<td align="left">Move cursor to the end of the line.</td>
+</tr>
+<tr>
+<td align="left"><del>Ctrl-f</del></td>
+<td align="left"><del>Move cursor forward one character;same as the right arrow key.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Ctrl-b</del></td>
+<td align="left"><del>Move cursor backward one character;same as the left arrow key.</del></td>
+</tr>
+<tr>
+<td align="left">Alt-f</td>
+<td align="left">Move cursor forward one word.</td>
+</tr>
+<tr>
+<td align="left">Alt-b</td>
+<td align="left">Move cursor backward one word.</td>
+</tr>
+<tr>
+<td align="left">Ctrl-l</td>
+<td align="left">Clear the screen and move the cursor to the top left corner. The clear command does the same thing.</td>
+</tr>
+</tbody></table>
+<h3 id="Text-Editing-Commands"><a href="#Text-Editing-Commands" class="headerlink" title="Text Editing Commands"></a>Text Editing Commands</h3><table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><del>Ctrl-d</del></td>
+<td align="left"><del>Delete the character at the cursor location</del></td>
+</tr>
+<tr>
+<td align="left"><del>Ctrl-t</del></td>
+<td align="left"><del>Transpose(exchange)the character at the cursor location with the one preceding it.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Alt-t</del></td>
+<td align="left"><del>Transpose the word at the cursor location with the one preceding it.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Alt-l</del></td>
+<td align="left"><del>Convert the characters from the cursor location to the end of the word to lowercase.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Alt-u</del></td>
+<td align="left"><del>Convert the characters from the cursor location to the end of the word to uppercase.</del></td>
+</tr>
+</tbody></table>
+<h3 id="Cut-And-Paste-Commands"><a href="#Cut-And-Paste-Commands" class="headerlink" title="Cut And Paste Commands"></a>Cut And Paste Commands</h3><table>
+<thead>
+<tr>
+<th align="left">Key</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">Ctrl-k</td>
+<td align="left">Kill text from the cursor location to the end of line.</td>
+</tr>
+<tr>
+<td align="left">Ctrl-u</td>
+<td align="left">Kill text from the cursor location to the beginning of the line.</td>
+</tr>
+<tr>
+<td align="left"><del>Alt-d</del></td>
+<td align="left"><del>Kill text from the cursor location to the end of the current word.</del></td>
+</tr>
+<tr>
+<td align="left"><del>Alt-Backspace</del></td>
+<td align="left"><del>Kill text from the cursor location to the beginning of the word. If the cursor is at the beginning of a word, kill the previous word.</del></td>
+</tr>
+<tr>
+<td align="left">Ctrl-y</td>
+<td align="left">Yank text from the kill-ring and insert it at the cursor location.</td>
+</tr>
+</tbody></table>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://billie66.github.io/TLCL/book/chap09.html">TLCL (billie66.github.io)</a></li>
+</ul>
+<h2 id="Vim"><a href="#Vim" class="headerlink" title="Vim"></a>Vim</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">cw</span><br><span class="line">x w b e</span><br><span class="line">i I a A o O s S</span><br><span class="line">0 $</span><br><span class="line">gg G</span><br><span class="line">d dd dw daw D dG dgg </span><br><span class="line">p yy </span><br><span class="line">u ctrl + r</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">:w !sudo tee %</span><br><span class="line">:set nu</span><br><span class="line">:%s/zempty/handsome/i</span><br><span class="line">:%s/zempty/handsome</span><br><span class="line">:%s/zempty/handsome/g</span><br><span class="line">:%s/zempty/handsome/gc</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Tools/" rel="tag"># Tools</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/8bfa65d2.html" rel="prev" title="Linux Basics and System Startup">
+                  <i class="fa fa-chevron-left"></i> Linux Basics and System Startup
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Jam ma</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
