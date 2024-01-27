@@ -8,7 +8,7 @@ I am Jam, a developer with a primary focus on open source software. Embracing th
 
 You can find me by:
 
-- Visiting my Github: [Jam](https://github.com/fullstackjam)
-- Sending me email: <mailto:fullstackjam@outlook.com>
+- Visiting my Github: [fullstackjam](https://github.com/fullstackjam)
+- Sending me email: [fullstackjam@outlook.com](mailto:fullstackjam@outlook.com)
 
 All content on this site is published under the CC BY-NC-SA 4.0 license.
