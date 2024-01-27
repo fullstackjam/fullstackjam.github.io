@@ -3,3 +3,5 @@ base_url = "https://blog.fullstackjam.com"
 generate_feed = true
 feed_filename = "rss.xml"
 minify_html = true
+[extra]
+favicon = "favicon.svg"
