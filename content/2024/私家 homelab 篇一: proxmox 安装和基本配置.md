@@ -92,11 +92,11 @@ Proxmox 功能很强大，配置也很多。这里只介绍一些我自己在用
 
 一般配 Linux 虚拟机，我们当然希望能在虚拟机启动时，就自动配置好 IP 地址、SSH 密钥、文件系统自动扩容，这样能免去很多手工操作。cloudinit 就是一个能帮你自动完成这些功能的工具，AWS、阿里云等各大云服务厂商都支持这种配置方式，好消息是 PVE 也支持。
 
-首先 cloudinit 必须使用特殊的系统镜像，这里以 Ubuntu 的 cloudimg为例。首先[下载](https://cloud-images.ubuntu.com/releases/22.04/release/ubuntu-22.04-server-cloudimg-amd64.img)好镜像到Proxmox 宿主机，并以导入的磁盘为该虚拟机的硬盘，命令如下：
+首先 cloudinit 必须使用特殊的系统镜像，这里以 Ubuntu 的 cloudimg为例。首先[下载](https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.img)好镜像到Proxmox 宿主机，并以导入的磁盘为该虚拟机的硬盘，命令如下：
 
 ```
 # 创建新虚拟机
-qm create 9000 --name ubuntu-jammy-template --memory 2048 --net0 virtio,bridge=vmbr0
+qm create 9000 --name ubuntu-noble-template --memory 2048 --net0 virtio,bridge=vmbr0
 
 # 将下载好的 img/qcow2 镜像导入为新虚拟机的硬盘,注意在镜像当前目录
 qm importdisk 9000 ubuntu-22.04-server-cloudimg-amd64.img local
@@ -106,12 +106,16 @@ qm set 9000 --scsihw virtio-scsi-pci --scsi0 local:9000/vm-9000-disk-0.raw
 
 # qcow2 镜像默认仅 2G 大小，需要手动扩容到 32G，否则虚拟机启动会报错
 qm resize 9000 scsi0 50G
+
+# 设置后 cloud-init 部分才不再是灰色
+qm set 9000 --ide2 local:cloudinit
 ```
 
 上面的工作都完成后，还需要做一些后续配置
 
 1. 手动设置 cloud-init 参数，重新生成 cloudinit image，启动虚拟机，并通过 ssh 登入远程终端
    1. cloud image 基本都没有默认密码，并且禁用了 SSH 密码登录。必须通过 cloud-init 参数添加私钥、设置账号、密码、私钥。
+   2. `apt install neovim vim git qemu-guest-agent curl wget openssh-server git -y`
 2. 检查 qemu-guest-agent，如果未自带，一定要手动安装它！
    1. ubuntu 需要通过 `sudo apt install qemu-guest-agent` 手动安装它。
 3. 安装所需的基础环境，如 docker/docker-compose/vim/git/python3。
