@@ -99,7 +99,7 @@ Proxmox 功能很强大，配置也很多。这里只介绍一些我自己在用
 qm create 9000 --name ubuntu-noble-template --memory 2048 --net0 virtio,bridge=vmbr0
 
 # 将下载好的 img/qcow2 镜像导入为新虚拟机的硬盘,注意在镜像当前目录
-qm importdisk 9000 ubuntu-22.04-server-cloudimg-amd64.img local
+qm importdisk 9000 ubuntu-24.04-server-cloudimg-amd64.img local
 
 # 通过 scsi 方式，将导入的硬盘挂载到虚拟机上
 qm set 9000 --scsihw virtio-scsi-pci --scsi0 local:9000/vm-9000-disk-0.raw
@@ -113,13 +113,14 @@ qm set 9000 --ide2 local:cloudinit
 
 上面的工作都完成后，还需要做一些后续配置
 
-1. 手动设置 cloud-init 参数，重新生成 cloudinit image，启动虚拟机，并通过 ssh 登入远程终端
+1. 调整启动顺序，确保 scsi0 设备在启动项中被启用
+2. 手动设置 cloud-init 参数，重新生成 cloudinit image，启动虚拟机，并通过 ssh 登入远程终端
    1. cloud image 基本都没有默认密码，并且禁用了 SSH 密码登录。必须通过 cloud-init 参数添加私钥、设置账号、密码、私钥。
    2. `apt install neovim vim git qemu-guest-agent curl wget openssh-server git -y`
-2. 检查 qemu-guest-agent，如果未自带，一定要手动安装它！
+3. 检查 qemu-guest-agent，如果未自带，一定要手动安装它！
    1. ubuntu 需要通过 `sudo apt install qemu-guest-agent` 手动安装它。
-3. 安装所需的基础环境，如 docker/docker-compose/vim/git/python3。
-4. 关闭虚拟机，然后将虚拟机设为模板。
+4. 安装所需的基础环境，如 docker/docker-compose/vim/git/python3。
+5. 关闭虚拟机，然后将虚拟机设为模板。
 
 接下来就可以从这个模板虚拟机，克隆各类新虚拟机了~
 
