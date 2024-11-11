@@ -1,7 +1,7 @@
 title = "Jam's Blog"
 base_url = "https://blog.fullstackjam.dev"
-generate_feed = true
-feed_filename = "rss.xml"
+generate_feeds = true
+feed_filenames = ["rss.xml"]
 minify_html = true
 [extra]
 favicon = "favicon.svg"
